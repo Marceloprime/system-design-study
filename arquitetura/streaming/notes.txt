@@ -1,0 +1,2 @@
+https://aws.amazon.com/pt/developer/application-security-performance/articles/video-streaming-architectures/
+https://www.primevideotech.com/video-streaming/innovating-live-video-streaming-for-a-vod-only-world

@@ -1,0 +1,35 @@
+Containers são processos, assim para garantir o isolamentos das maquina,
+é usado o namespace que provem o isolamento  dos processos, redes e do Kernel.
+
+Máquinas virtuais possuem camadas adicionais de virtualização em relação a um container;
+Containers funcionam como processos no host;
+Containers atingem isolamento através de namespaces;
+Os recursos dos containers são gerenciados através de cgroups.
+
+
+Iniciando um container com comandos
+Ex: docker run ubuntu sleep 1d
+
+Executando commandos dentro de um container:
+Ex: docker exec -it e5c6db3185d5 bash
+
+Parando um docker imediatamente
+Ex: docker stop -t=0 e5c6db3185d5
+
+Removendo um container:
+Ex: docker rn e5c6db3185d5
+
+Iniciando e já Executando
+Ex: docker run -it ubuntu bash
+
+Para ver a porta usada por um container
+Ex: docker port a9140a7ecce1
+
+Como definir uma porta especifica no docker
+Ex: docker run -d -p 8080:80
+
+Para para todos os Containers
+Ex: docker stop ${docker container ls -q}
+
+Para verificar o tamanho do container 
+Ex docker ps -s

@@ -1,0 +1,25 @@
+Baixando Imagens:
+-Exemplo:
+    docker pull ubuntu
+Sendo nesse cenário a imagem baixada é o ubuntu
+
+Listando imagens baixadas:
+    docker imagens
+
+Executando Containers:
+A partir da imagem podemos iniciar quantos containers quisermos através do comando docker run.
+Para acessarmos um terminal do Ubuntu podemos usar o comando:
+    docker run -i -t ubuntu ou docker run -it ubuntu. 
+O parâmetro -i indica que queremos um container interativo, 
+o -t indica que queremos anexar o terminal virtual tty do container ao nosso host.
+
+Listando containers em execução:
+Para ver os containers em execução podemos usar o comando docker ps (em outro terminal ou aba)
+
+Removendo containers:
+Para remover o container podemos usar o comando docker rm e informar o id do container ou o nome dele. Para nosso caso poderíamos executar o comando docker rm 43aac92b4c99 ou docker rm dreamy_bassi para remover o container por completo.
+
+Caso tenhamos a necessidade de remover todos os container (em execução ou encerrados) podemos usar o comando docker rm $(docker ps -qa). A opção -q do comando docker ps tem como saída somente os ids dos containers, essa lista de ids é passado para o docker rm e com isso será removido todos os containers.
+
+Como são feitas as imagens:
+Uma imagem pode ser criada a partir de um arquivo de definição chamado de Dockerfile, nesse arquivo usamos algumas diretivas para declarar o que teremos na nossa imagem. Por exemplo se olharmos a definição da imagem do Ubuntu podemos ver algo semelhante a isso

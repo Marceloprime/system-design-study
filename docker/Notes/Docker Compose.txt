@@ -1,0 +1,3 @@
+O Docker Compose é uma ferramenta de coordenação de containers;
+Como iniciar containers em conjunto com o comando docker-compose up;
+Como criar um arquivo de composição e definir instruções de containers, redes e serviços.

@@ -1,0 +1,42 @@
+- O ddd embora possa ser usado em projetos
+pequenos, não é recomendado. Mas sim para projetos grandes
+onde há dificuldade em entender o contexto.
+
+- DDD é / deve ser aplicado para casos de projetos
+de software complexos
+
+- Grandes projetos possuem muitas áreas, muitas regras de negócio,
+muitas pessoas com diferente visões em diferentes contextos.
+
+- Não há como não utilizar técnicas avançadas em projetos de alta complexidade
+
+- Grande parte da complexidade desse tipo de software não vem da tecnologia, mas sim
+da comunicação, separação de contexto, entendimento do négocio por diversos ângulos;
+
+Como implementar DDD:
+- Entender com profundidade o dominio e subdominio da aplicação
+- Ter uma linguagem universal (linguagem ubquia) entre todos  os envolvidos.
+- Criar o design extratégico utilizado bounded contexts
+- Criar o design tático para conseguir mapear e agregar as entidades e objetos de valor da aplicação,
+bem como os eventos de dominio
+- Clareza do que é complexidade de négocio e complexidade técnica.
+
+
+Domínio e subdominio
+- Dominio core: coração do negócio e diferencial competivo da empresa
+- SubDominio de suporte: apoiam o dominio e faz a operação ser possivel
+- SubDominio generico: softwares auxiliares
+
+Bounded Context:
+é uma divisão explicita do dominio
+
+
+MOdelagem estratégica / Context Mapping
+- Partnership
+- Shared Kernel
+- Customer-Supplier Development
+- Conformist
+- Anticorruption-layer
+
+
+

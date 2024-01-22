@@ -1,0 +1,22 @@
+Alternativas com meios para persistir dados importantes:
+
+- Com volumes, é possível escrever os dados em uma camada 
+persistente.
+
+- Com bind mounts, é possível 
+escrever os dados em uma camada persistente baseado 
+na estrutura de pastas do host.
+Para definir que um containeir salve os dados em um pasta local
+podemos usar o comando:
+    Tudo que for pesistido na pasta app vai estar na pasta /home/nome_do_diretório
+Ex: docker run -it -v /home/nome_do_diretório:/app ubuntu bash
+Ex2: docker run -it --mount type=bind,source=/home/nome_do_diretório, target=/app ubuntu bash
+
+
+Volumes
+Volumes são gerenciados pelo Docker e independem da estrutura de pastas do sistema.
+- Área gerenciada pelo docker no filesystem
+Ex: docker run -it -v meu-volume:/app ubuntu bash
+
+tmpfs - memoria temporária
+Ex: docker run -it --tmpfs=/app ubuntu bash

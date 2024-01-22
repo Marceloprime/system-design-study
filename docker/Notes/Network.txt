@@ -1,0 +1,37 @@
+lista redes
+Ex: docker networks ls
+
+Criando uma rede bridge
+Ex: docker network create --drive bridge minha-bridge
+
+Para associar uma rede a um containeir
+Ex docker run -it --name ubuntu1 --network minha-bridge ubuntu bash
+
+Conexão de banco de dados:
+1º docker pull <banco de sua escolha>
+2º crier a imagem da sua aplicação [opcional]
+3º crier um containeir do banco com uma rede do tipo bridge
+    Exemplo: docker run -d --network minha-bridge --name meu-mongo mongo:4.4.6
+4º crier o containeir da aplicação conectador a sua rede:
+    Exemplo: docker run -d --network minha-bridge --name alurabooks -p 3000:3000 aluradocker/alura-books:1.0
+
+
+O docker dispõe por padrão de três redes: bridge, host e none;
+A rede bridge é usada para comunicar containers em um mesmo host;
+Redes bridges criadas manualmente permitem comunicação via hostname;
+A rede host remove o isolamento de rede entre o container e o host;
+A rede none remove a interface de rede do container;
+Podemos criar redes com o comando docker network create.
+
+Conexão com o local host:
+docker run --network = "host"
+
+Matar todas as networks que não estão em uso
+docker network prune
+
+
+Container acessando nossa maquina:
+dentro do docker bata na porta com:
+http://host.docker.internal:<port>
+
+
