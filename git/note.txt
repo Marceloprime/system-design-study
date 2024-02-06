@@ -1,0 +1,8 @@
+Semantical versioning
+Exemplo: 2.1.4
+
+(2) - Major - API Publica
+(1) - Minor - Adicionado funcionalidade, mas compativel com a API
+(4) - Patch - Bugs, ajustes
+
+Major = 0 - API instavel, pode mudar a qualquer momento

@@ -1,0 +1,2 @@
+Comando para remover images do tipo <none>
+docker rmi $(docker images --filter "dangling=true" -q --no-trunc)

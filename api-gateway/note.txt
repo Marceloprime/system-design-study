@@ -1,0 +1,18 @@
+Tipos de Api Gateway:
+
+ - Enterprise Gateway:
+    Foco deste tipo de solução é na grande maioria das vezes realizar exposição e gerenciamento de deployment de APIs voltadas ao negócio, 
+    em geral ele tambpem permite
+    controlar o ciclo de vide de uma api.
+
+   - Propósito principal: Exposição, composição e gerenciamento de APIs externas/internas
+   - Manutenção das APIs: Time de APIs em geral faz administração via portal do api Gateway
+   - Suporte a ambientes: Suporta múltiplos ambientes DEV, QA e Prod.
+
+- Micro/microservices Gateway
+   Tipicament essa classe de Gateway tem a capacidade de "rotear" tráfego de entrada para APIs ou serviços. Em geral não oferecem
+   suporte ao ciclo de vida das apis e as equipes temo que fazê-lo via pricesso separado
+
+
+
+Docs: https://microservices.io/patterns/apigateway.html
